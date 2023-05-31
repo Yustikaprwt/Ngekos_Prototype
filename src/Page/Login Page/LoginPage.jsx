@@ -123,7 +123,10 @@ const LoginPage = () => {
 
             <p className="register-forgot-account">
               Don't have any account?
-              <span style={{ fontWeight: "400", marginLeft: "3px" }}>
+              <span
+                style={{ fontWeight: "400", marginLeft: "3px" }}
+                onClick={registerPage}
+              >
                 Register
               </span>
             </p>

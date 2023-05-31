@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+
+.register-section {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.section-register-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.register-card {
+  background-color: #f19100;
+  width: 380px;
+  height: 460px;
+  padding: 10px;
+  border-radius: 25px;
+  margin-top: 30px;
+}
+
+.input-register-field {
+  padding: 50px 20px 0;
+}
+
+.label-register {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.input-register {
+  width: 100%;
+  background-color: #f19100;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.register-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.register-button {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: #f8dc4c;
+  width: 200px;
+  height: 30px;
+  border-style: none;
+  border-radius: 20px;
+  box-shadow: gray 1px 1px 2px 0px;
+}
+
+.register-button:hover {
+  background-color: #dcbc15;
+  animation-duration: 0s;
+}
+
+.section-register-2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.logo-register {
+  margin-top: 30px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .register-card {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .input-register {
+    width: 100%;
+  }
+
+  .register-button {
+    width: 100%;
+  }
+
+  .section-register-2 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
