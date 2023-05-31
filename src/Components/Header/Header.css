@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+}
+
+.header-option {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-option > ul {
+  display: flex;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  color: #999999;
+  font-weight: 400;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-option > ul > li:hover {
+  color: #f19100;
+  animation-duration: 0s;
+}
+
+.header-option > ul > li {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.button-login-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: #f19100;
+  width: 100px;
+  height: 30px;
+  border-style: none;
+  border-radius: 20px;
+  box-shadow: gray 1px 1px 2px 0px;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.button-login-header:hover {
+  background-color: #a76d16;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .header-option > ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .show-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-top: 10px;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s;
+  }
+
+  .header-option > ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+  }
+
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .header-option > ul.show-menu {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .header-option > ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #f7f7f7;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+  }
+}
