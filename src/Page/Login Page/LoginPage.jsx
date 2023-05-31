@@ -1,9 +1,11 @@
 import { React, useState } from "react";
+import { useNavigate } from "react-router";
 import "../Login Page/LoginPage.css";
 import logoNgekos from "../../Asset/logo_ngekos.png";
 import logoLogin from "../../Asset/logo_login.png";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
+import { IoIosArrowBack } from "react-icons/io";
 
 const LoginPage = () => {
   const data = {
@@ -47,10 +49,37 @@ const LoginPage = () => {
     console.log("Form submitted!");
   };
 
+  const navigate = useNavigate();
+  const registerPage = () => {
+    navigate(`/register`);
+  };
+
   return (
     <>
       <div className="login-section">
         <div className="section-login-1">
+          <div style={{ display: "flex" }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "flex-start",
+              }}
+            >
+              <IoIosArrowBack style={{ width: "20px", height: "20px" }} />
+              <p
+                style={{
+                  margin: "0 0 0 5px",
+                  lineHeight: "20px",
+                  fontFamily: "poppins",
+                  fontWeight: "400",
+                  fontSize: "14px",
+                }}
+                onClick={registerPage}
+              >
+                Back
+              </p>
+            </div>
+          </div>
           <img className="logo-ngekos" src={logoNgekos} alt="img" />
         </div>
 

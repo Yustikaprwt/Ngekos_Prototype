@@ -13,6 +13,7 @@ body {
   padding: 10px;
   display: flex;
   justify-content: center;
+  margin-right: 500px;
 }
 
 .logo-login {
@@ -23,7 +24,7 @@ body {
 
 .section-login-1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 15px;
 }
 
