@@ -4,6 +4,11 @@
   display: flex;
   justify-content: space-between;
   background-color: #f7f7f7;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .header-option {
