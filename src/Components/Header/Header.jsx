@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
 import "../Header/Header.css";
 import logoNgekos from "../../Asset/logo_ngekos.png";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -8,6 +9,20 @@ const Header = () => {
 
   const handleMenuToggle = () => {
     setShowMenu(!showMenu);
+  };
+
+  const navigate = useNavigate();
+  const homePage = () => {
+    navigate(`/home`);
+  };
+  const privacyPolicyPage = () => {
+    navigate(`/privacy/policy`);
+  };
+  const helpCenter = () => {
+    navigate(`/help/center`);
+  };
+  const loginPage = () => {
+    navigate(`/login`);
   };
 
   return (
@@ -26,11 +41,13 @@ const Header = () => {
 
       <div className="header-option">
         <ul className={showMenu ? "show-menu" : ""}>
-          <li>Home</li>
-          <li>Private Policy</li>
-          <li>Help Center</li>
+          <li onClick={homePage}>Home</li>
+          <li onClick={privacyPolicyPage}>Private Policy</li>
+          <li onClick={helpCenter}>Help Center</li>
           <li>
-            <button className="button-login-header">Login</button>
+            <button onClick={loginPage} className="button-login-header">
+              Login
+            </button>
           </li>
         </ul>
         <AiOutlineMenu className="menu-icon" onClick={handleMenuToggle} />
