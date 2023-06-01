@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "../Page/Login Page/LoginPage";
 import RegisterPage from "../Page/Register Page/RegisterPage";
-import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer";
 
 const Routers = () => {
   return (
@@ -10,7 +10,7 @@ const Routers = () => {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="/test" element={<Header />} />
+        <Route path="/test" element={<Footer />} />
       </Routes>
     </BrowserRouter>
   );
