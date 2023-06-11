@@ -1,1 +1,254 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+
+.section-landing-page {
+  background-color: #f7f7f7;
+  max-width: 100%;
+}
+
+.banner-text-section {
+  position: absolute;
+  top: 45% !important;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+}
+
+.banner-image-section {
+  position: relative;
+}
+
+.banner-text-section > h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 5vw;
+  font-weight: 200;
+  text-shadow: 2px 2px 7px gray;
+  margin-bottom: 20px;
+}
+
+.button-register-landing-page {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: rgba(241, 145, 0, 0.6);
+  color: white;
+  border-style: none;
+  font-size: 15px;
+  padding: 8px;
+  width: 250px;
+  border-radius: 50px;
+}
+
+.button-register-landing-page:hover {
+  background-color: #a76d16;
+}
+
+.recommendation-section > h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.kost-image-recommendation {
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 250px;
+  height: 170px;
+  max-width: 100%;
+}
+
+.kost-image-overlay {
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  height: auto;
+  padding: 10px;
+}
+
+.kost-image-overlay:hover {
+  transform: scale(1.1);
+}
+
+.kost-image-overlay-1 img {
+  transition: 0.3s;
+}
+
+.kost-image-overlay-1:hover img {
+  filter: brightness(50%);
+}
+
+.kost-image-overlay-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 170px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.kost-image-overlay-1:hover::before {
+  opacity: 1;
+}
+
+.kost-image-overlay-1 > p:hover {
+  font-weight: 400;
+}
+
+.kost-image-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.kost-image-text > p {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 25px;
+}
+
+.rating span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.recommendation-campus-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.kost-image-overlay-1 {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.kost-image-overlay-1 img {
+  transition: 0.3s;
+}
+
+.kost-image-overlay-1 > p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.campus-image {
+  width: 250px;
+  height: 170px;
+  border-radius: 20px;
+}
+
+.card-container {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-container-owner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.text-card-owner {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  text-align: justify;
+  line-height: 2;
+  color: white;
+}
+
+.owner-name {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  color: white;
+}
+
+.kost-name {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .banner-text-section h1 {
+    font-size: 7vw;
+    width: 500px;
+  }
+
+  .banner-text-section button {
+    font-size: 2vw;
+    padding: 7px;
+    width: 150px;
+  }
+
+  .button-register-landing-page {
+    width: 150px;
+  }
+
+  .recommendation-section > h1 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .kost-image-recommendation {
+    width: 100%;
+    height: 100%;
+  }
+
+  .kost-image-text {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+
+  .recommendation-campus-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kost-image-overlay {
+    width: 100%;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+
+  .kost-owner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kost-owner-info {
+    text-align: center;
+  }
+}
