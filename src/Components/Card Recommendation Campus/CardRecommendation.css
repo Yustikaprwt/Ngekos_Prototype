@@ -1,0 +1,51 @@
+.button-card-recommendation-section {
+  background-color: #f19100 !important;
+  border-style: none !important;
+  border-radius: 50px !important;
+  width: 100px !important;
+  height: 25px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 13px !important;
+}
+
+.button-card-recommendation-section:hover {
+  background-color: #dcbc15 !important;
+}
+
+.card-recommendation-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.card-recommendation-body {
+  width: 250px !important;
+}
+
+.icon-card {
+  width: 25px;
+  height: 25px;
+  color: #f19100;
+}
+
+@media (max-width: 768px) {
+  .card-recommendation-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-recommendation {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+}
