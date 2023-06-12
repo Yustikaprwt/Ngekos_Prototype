@@ -75,3 +75,52 @@
   height: 350px;
   padding: 10px;
 }
+
+@media (max-width: 768px) {
+  .about-us-section-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-about-us-container > img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-overlay {
+    align-items: center;
+    padding: 20px;
+  }
+
+  .text-overlay h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .text-overlay p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-us-section-2 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .text-about-us-section-2 {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .text-about-us-section-2 > h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .about-us-section-2 > img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}

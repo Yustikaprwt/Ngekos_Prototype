@@ -6,6 +6,7 @@ import LandingPage from "../Page/LandingPage/LandingPage";
 import HomePage from "../Page/Home Page/HomePage";
 import HelpCenter from "../Page/Help Center/HelpCenter";
 import AboutUs from "../Page/About Us/AboutUs";
+import PrivacyPolicy from "../Page/Privacy Policy/PrivacyPolicy";
 
 const Routers = () => {
   return (
@@ -17,6 +18,7 @@ const Routers = () => {
         <Route path="/home" element={<HomePage />} />
         <Route path="/help/center" element={<HelpCenter />} />
         <Route path="/about/us" element={<AboutUs />} />
+        <Route path="/privacy/policy" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
   );
