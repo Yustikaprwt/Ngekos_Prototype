@@ -1,0 +1,64 @@
+.profile-page-section {
+  background-color: #f7f7f7;
+  min-height: 100%;
+}
+
+.profile-page-section-1,
+.profile-page-section-2 {
+  background-color: #f19100;
+  padding: 20px;
+  height: fit-content;
+  border-radius: 25px;
+}
+
+.profile-page-section-1 > h3,
+.profile-page-section-2 > h3 {
+  font-family: "Poppins";
+  font-size: 23px;
+  color: white;
+  border-bottom: white solid 1px;
+  margin-bottom: 30px;
+}
+
+.profile-page-section-1 > p,
+.profile-page-section-2 > p {
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.edit-profile-password {
+  background-color: #f8dc4c;
+  box-shadow: gray 1px 1px 2px 0px;
+  border-style: none;
+  padding: 10px;
+  font-family: "Poppins";
+  font-size: 14px;
+  border-radius: 20px;
+  color: white;
+}
+
+.edit-profile-password:hover {
+  background-color: #dcbc15;
+  animation-duration: 0.3s;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-profile-page {
+  width: 400px;
+  height: 400px;
+}
