@@ -8,6 +8,7 @@ import HelpCenter from "../Page/Help Center/HelpCenter";
 import AboutUs from "../Page/About Us/AboutUs";
 import PrivacyPolicy from "../Page/Privacy Policy/PrivacyPolicy";
 import ProfilePage from "../Page/Profile Page/ProfilePage";
+import KostFlorentine from "../Page/Kost Florentine/KostFlorentine";
 
 const Routers = () => {
   return (
@@ -21,6 +22,7 @@ const Routers = () => {
         <Route path="/about/us" element={<AboutUs />} />
         <Route path="/privacy/policy" element={<PrivacyPolicy />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/kost/florentine" element={<KostFlorentine />} />
       </Routes>
     </BrowserRouter>
   );
