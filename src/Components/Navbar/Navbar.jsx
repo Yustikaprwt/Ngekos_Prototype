@@ -26,6 +26,10 @@ const Navbar = () => {
     navigate(`/help/center`);
   };
 
+  const profilePage = () => {
+    navigate(`/profile`);
+  };
+
   return (
     <>
       <div className="section-navbar">
@@ -34,7 +38,7 @@ const Navbar = () => {
           <li onClick={helpCenter}>Help Center</li>
           <li onClick={handleShow}>Notification</li>
           <li>
-            <MdAccountCircle
+            <MdAccountCircle onClick={profilePage}
               style={{
                 width: "35px",
                 height: "35px",
