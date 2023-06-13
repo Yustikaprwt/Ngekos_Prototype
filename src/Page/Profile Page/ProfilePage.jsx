@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import { useNavigate } from "react-router";
 import "../Profile Page/ProfilePage.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
@@ -6,6 +7,11 @@ import Modal from "react-bootstrap/Modal";
 import logo_profile from "../../Asset/logo_profile.png";
 
 const ProfilePage = () => {
+  const navigate = useNavigate();
+  const logout = () => {
+    navigate(`/`);
+  };
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -37,6 +43,9 @@ const ProfilePage = () => {
                 : marsha@gmail.com
               </span>
             </p>
+            <button onClick={logout} className="edit-profile-password">
+              Logout
+            </button>
           </div>
 
           <Modal show={show} onHide={handleClose}>
