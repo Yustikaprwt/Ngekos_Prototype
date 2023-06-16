@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import "../Home Page/HomePage.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
@@ -11,6 +12,12 @@ import kampus_3 from "../../Asset/kampus_3.jpeg";
 import kampus_4 from "../../Asset/kampus_4.jpg";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
+  const kostAroundCampus = () => {
+    navigate(`/kost/around/campus`);
+  };
+
   return (
     <>
       <div className="homepage-section">
@@ -46,21 +53,10 @@ const HomePage = () => {
         <div className="homepage-section-4">
           <h3>Area Around Campus</h3>
           <div className="homepage-section-4-campus">
-            <div className="homepage-section-4-campus-card">
-              <img src={kampus_1} alt="img" />
-            </div>
-
-            <div className="homepage-section-4-campus-card">
-              <img src={kampus_2} alt="img" />
-            </div>
-
-            <div className="homepage-section-4-campus-card">
-              <img src={kampus_3} alt="img" />
-            </div>
-
-            <div className="homepage-section-4-campus-card">
-              <img src={kampus_4} alt="img" />
-            </div>
+            <img onClick={kostAroundCampus} src={kampus_1} alt="img" />
+            <img onClick={kostAroundCampus} src={kampus_2} alt="img" />
+            <img onClick={kostAroundCampus} src={kampus_3} alt="img" />
+            <img onClick={kostAroundCampus} src={kampus_4} alt="img" />
           </div>
         </div>
       </div>

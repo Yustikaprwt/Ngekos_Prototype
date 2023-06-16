@@ -54,6 +54,10 @@ const LoginPage = () => {
     navigate(`/register`);
   };
 
+  const homePage = () => {
+    navigate(`/home`);
+  };
+
   return (
     <>
       <div className="login-section">
@@ -114,7 +118,7 @@ const LoginPage = () => {
                 />
 
                 <div className="submit-button-container">
-                  <button type="submit" className="login-button">
+                  <button onClick={homePage} type="submit" className="login-button">
                     Login
                   </button>
                 </div>

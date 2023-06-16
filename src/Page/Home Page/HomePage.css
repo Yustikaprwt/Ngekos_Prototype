@@ -56,57 +56,24 @@
 
 .homepage-section-4-campus {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
-.homepage-section-4-campus-card {
-  position: relative;
-  display: inline-block;
-}
-
-.homepage-section-4-campus-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: rgba(247, 247, 247, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.homepage-section-4-campus-card:hover::before {
-  opacity: 1;
-}
-
-.homepage-section-4-campus-card::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.homepage-section-4-campus-card:hover::after {
-  opacity: 1;
-}
-
-.homepage-section-4-campus-card > img {
+.homepage-section-4-campus > img {
   width: 250px !important;
   height: 250px !important;
   border-radius: 50% !important;
   margin: 15px !important;
   object-fit: cover !important;
   overflow: hidden !important;
+}
+
+.homepage-section-4-campus img {
+  transition: transform 0.3s ease;
+}
+
+.homepage-section-4-campus img:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {

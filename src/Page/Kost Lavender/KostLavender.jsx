@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import "../Kost Florentine/KostFlorentine.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
-import kosan_1 from "../../Asset/kosan_1.jpeg";
+import kosan_4 from "../../Asset/kosan_4.jpg";
 import {
   AiFillHome,
   AiFillThunderbolt,
@@ -26,12 +26,12 @@ import { BsFillCarFrontFill, BsHospital } from "react-icons/bs";
 import { LuBedDouble } from "react-icons/lu";
 import CardRecommendation from "../../Components/Card Recommendation Campus/CardRecommendation";
 
-const KostFlorentine = () => {
+const KostLavender = () => {
 
   const navigate = useNavigate();
 
-  const paymentFlorentine = () => {
-    navigate(`/payment/florentine`);
+  const paymentLavender = () => {
+    navigate(`/payment/lavender`);
   };
 
   return (
@@ -40,8 +40,8 @@ const KostFlorentine = () => {
         <Navbar />
         <div className="detail-kost-section-1">
           <div className="detail-kost-section-2">
-            <img className="detail-kost-image" src={kosan_1} alt="img" />
-            <h3>Kost Florentine</h3>
+            <img className="detail-kost-image" src={kosan_4} alt="img" />
+            <h3>Kost Lavender</h3>
             <p>
               Jl. Blora I, Klandasan Ilir, Kecamatan Balikpapan Selatan, Kota
               Balikpapan
@@ -58,7 +58,7 @@ const KostFlorentine = () => {
           <div className="detail-kost-price">
             <h3>Rp 900.000/Bulan</h3>
             <input type="date" />
-            <button onClick={paymentFlorentine}>Rent</button>
+            <button onClick={paymentLavender}>Rent</button>
           </div>
         </div>
 
@@ -165,4 +165,4 @@ const KostFlorentine = () => {
   );
 };
 
-export default KostFlorentine;
+export default KostLavender;

@@ -64,8 +64,13 @@ const RegisterPage = () => {
   };
 
   const navigate = useNavigate();
+
   const homePage = () => {
     navigate(`/home`);
+  };
+
+  const loginPage = () => {
+    navigate(`/login`);
   };
 
   return (
@@ -147,7 +152,7 @@ const RegisterPage = () => {
               </div>
 
               <div className="register-button-container">
-                <button onClick={homePage} className="register-button">
+                <button onClick={loginPage} className="register-button">
                   Register
                 </button>
               </div>

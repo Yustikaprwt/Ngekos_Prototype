@@ -61,7 +61,7 @@ const Navbar = () => {
               height: "20px",
             }}
           />{" "}
-          Your payment is success!
+          Your booking is success!
         </Modal.Body>
       </Modal>
     </>

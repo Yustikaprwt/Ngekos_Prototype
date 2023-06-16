@@ -25,6 +25,26 @@ const LandingPage = () => {
     navigate(`/register`);
   };
 
+  const kostFlorentine = () => {
+    navigate(`/kost/florentine`);
+  };
+
+  const kostTulip = () => {
+    navigate(`/kost/tulip`);
+  };
+
+  const kostSunflower = () => {
+    navigate(`/kost/sunflower`);
+  };
+
+  const kostLavender = () => {
+    navigate(`/kost/lavender`);
+  };
+
+  const kostAroundCampus = () => {
+    navigate(`/kost/around/campus`);
+  };
+
   return (
     <>
       <div className="section-landing-page">
@@ -77,6 +97,7 @@ const LandingPage = () => {
           >
             <div className="kost-image-overlay">
               <Image
+                onClick={kostFlorentine}
                 className="kost-image-recommendation"
                 src={kosan_1}
                 alt="img"
@@ -98,6 +119,7 @@ const LandingPage = () => {
 
             <div className="kost-image-overlay">
               <Image
+                onClick={kostTulip}
                 className="kost-image-recommendation"
                 src={kosan_2}
                 alt="img"
@@ -119,6 +141,7 @@ const LandingPage = () => {
 
             <div className="kost-image-overlay">
               <Image
+                onClick={kostSunflower}
                 className="kost-image-recommendation"
                 src={kosan_3}
                 alt="img"
@@ -140,6 +163,7 @@ const LandingPage = () => {
 
             <div className="kost-image-overlay">
               <Image
+                onClick={kostLavender}
                 className="kost-image-recommendation"
                 src={kosan_4}
                 alt="img"
@@ -165,21 +189,21 @@ const LandingPage = () => {
             <div className="recommendation-campus-section">
               <div className="kost-image-overlay-1">
                 <Image src={kampus_1} className="campus-image" alt="img" />
-                <p>UNIBA Balikpapan</p>
+                <p onClick={kostAroundCampus}>UNIBA Balikpapan</p>
               </div>
               <div className="kost-image-overlay-1">
                 <Image src={kampus_2} className="campus-image" alt="img" />
-                <p>Poltekba Balikpapan</p>
+                <p onClick={kostAroundCampus}>Poltekba Balikpapan</p>
               </div>
 
               <div className="kost-image-overlay-1">
                 <Image src={kampus_3} className="campus-image" alt="img" />
-                <p>ITK Balikpapan</p>
+                <p onClick={kostAroundCampus}>ITK Balikpapan</p>
               </div>
 
               <div className="kost-image-overlay-1">
                 <Image src={kampus_4} className="campus-image" alt="img" />
-                <p>Universitas Mulia Balikpapan</p>
+                <p onClick={kostAroundCampus}>Universitas Mulia Balikpapan</p>
               </div>
             </div>
 

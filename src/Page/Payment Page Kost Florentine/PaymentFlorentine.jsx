@@ -1,12 +1,12 @@
 import { React, useState } from "react";
 import { useNavigate } from "react-router";
-import "../Payment Page/PaymentPage.css";
+import "./PaymentPage.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import kosan_1 from "../../Asset/kosan_1.jpeg";
 import { AiFillMinusSquare, AiFillPlusSquare } from "react-icons/ai";
 
-const PaymentPage = () => {
+const PaymentFlorentine = () => {
   const [fieldCount, setFieldCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(900000);
   const [startDate, setStartDate] = useState("");
@@ -110,4 +110,4 @@ const PaymentPage = () => {
   );
 };
 
-export default PaymentPage;
+export default PaymentFlorentine;
