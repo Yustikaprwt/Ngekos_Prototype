@@ -1,0 +1,140 @@
+.payment-section {
+  background-color: #f7f7f7;
+  min-height: 100%;
+}
+
+.payment-section > h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  padding: 20px;
+}
+
+.payment-section-2 > h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.payment-section-2 > img {
+  width: 300px;
+  height: 210px;
+  border-radius: 10px;
+}
+
+.payment-section-1 {
+  background-color: #f19100;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 20px;
+  border-radius: 10px;
+}
+
+.payment-section-3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 50%;
+}
+
+.field-count {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.field-count >input {
+  border-style: none;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.payment-section-4 {
+  background-color: #f19100;
+  padding: 20px;
+  color: white;
+  margin: 20px 20px;
+  border-radius: 10px;
+}
+
+.payment-section-4 > h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  align-items: center;
+}
+
+.payment-section-5 {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  align-items: center;
+}
+
+.payment-section-5 > button {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: #f8dc4c;
+  width: 150px;
+  height: 40px;
+  border-style: none;
+  border-radius: 20px;
+  box-shadow: gray 1px 1px 2px 0px;
+}
+
+.payment-section-5 > button:hover {
+  background-color: #dcbc15;
+  animation-duration: 0s;
+}
+
+@media (max-width: 768px) {
+  .payment-section > h2 {
+    font-size: 28px;
+  }
+
+  .payment-section-2 > h3 {
+    font-size: 18px;
+  }
+
+  .payment-section-2 > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .payment-section-1 {
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .payment-section-3 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .payment-section-4 {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .payment-section-4 > h3 {
+    font-size: 18px;
+  }
+
+  .payment-section-5 {
+    justify-content: flex-start;
+  }
+
+  .payment-section-5 > button {
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
