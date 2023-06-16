@@ -9,6 +9,7 @@ import AboutUs from "../Page/About Us/AboutUs";
 import PrivacyPolicy from "../Page/Privacy Policy/PrivacyPolicy";
 import ProfilePage from "../Page/Profile Page/ProfilePage";
 import KostFlorentine from "../Page/Kost Florentine/KostFlorentine";
+import PaymentPage from "../Page/Payment Page/PaymentPage";
 
 const Routers = () => {
   return (
@@ -23,6 +24,7 @@ const Routers = () => {
         <Route path="/privacy/policy" element={<PrivacyPolicy />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/kost/florentine" element={<KostFlorentine />} />
+        <Route path="/payment" element={<PaymentPage />} />
       </Routes>
     </BrowserRouter>
   );
